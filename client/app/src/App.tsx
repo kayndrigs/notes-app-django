@@ -6,7 +6,7 @@ interface Note {
   noteContent: string;
 }
 
-const API_URL = "https://kaynerodrigo.pythonanywhere.com/api/notes/";
+const API_URL = "http://127.0.0.1:8000/api/notes/";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);

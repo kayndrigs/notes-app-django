@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-2j2o8@km0e-1mr1h@^40p_%8t0agz6lq0-8ds(8x3jo0h#9r06
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kaynerodrigo.pythonanywhere.com']
-
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -122,7 +121,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_ROOT = '/home/kaynerodrigo/server/static'
 STATIC_URL = 'static/'
 
 # Default primary key field type
@@ -130,6 +128,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    'https://kaynerodrigo.pythonanywhere.com/',
-]
+CORS_ALLOW_ALL_ORIGINS = True
